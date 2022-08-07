@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function sayHello(){
+            document.write("Hello there!");
+        }
+    </script>
+</head>
+<body>
+    <p>Click the following button to call the function</p>
+    <form>
+        <input type="button" onclick="sayHello()" value="Say Hello">
+    </form>
+    <p>Use different text in write method and then try...</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function sayHello(){
+            document.write("Hello there!");
+        }
+    </script>
+</head>
+<body>
+    <p>Click the following button to call the function</p>
+    <form>
+        <input type="button" onclick="sayHello()" value="Say Hello">
+    </form>
+    <p>Use different text in write method and then try...</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function sayHello(name, age){
+            document.write(name + " is " + age + "years old.");
+        }
+    </script>
+</head>
+<body>
+    <p>click the following button to call the function</p>
+    <form>
+        <input type="button" onclick="sayHello('Zara',7)" value="Say Hello">
+    </form>
+    <p>use different parameters inside the function and then try...</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function sayHello(name, age){
+            document.write(name + " is " + age + "yeras old");
+        }
+    </script>
+</head>
+<body>
+    <p>Click the following button to call function</p>
+    <form>
+        <input type="button" onclick="sayHello('Zara',7)" value="Say Hello">
+    </form>
+    <p>Use different parameters inside the function and then try...</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function concatenate(first, last){
+            var full;
+            full = first + last;
+            return full;
+        }
+        function secondFunction(){
+            var result;
+            result = concatenate('Zara','Ali');
+            document.write(result);
+        }
+    </script>
+</head>
+<body>
+    <p>Click the following button to call the function</p>
+    <form>
+        <input type="button" onclick="secondFunction()" value="Call Function">
+    </form>
+    <p>Use different parameters inside the function and then try...</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        <!--
+            function h(a,b){
+                function square(x){return x*x;}
+                return Math.sqrt(square(a) + square(b));
+            }
+            function secondFunction(){
+                var result;
+                result = h(1,2);
+                document.write(result);
+            }
+            //-->
+    </script>
+</head>
+<body>
+    <p>Click the following button to call the function</p>
+    <form>
+        <input type="button" onclick="secondFunction()" value="Call Function">
+    </form>
+    <p>Use different parameters inside the function and then try...</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        <!--
+            var func = new Function("x","y","return x*y;");
+            function secondFunction(){
+                var result;
+                result = func(10,20);
+                document.write(result);
+            }
+            //-->
+    </script>
+</head>
+<body>
+    <p>Click the following button to call the function</p>
+    <form>
+        <input type="button" onclick="secondFunction()" value="Call Function">
+    </form>
+    <p>Use different parameters inside the function and then try...</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        <!--
+            var func = function(x,y){return x*y};
+            function secondFunction(){
+                var result;
+                result = func(10,20);
+                document.write(result);
+            }
+            //-->
+    </script>
+</head>
+<body>
+    <p>Click the following button to call the function</p>
+    <form>
+        <input type="button" onclick="secondFunction()" value="Call Function">
+    </form>
+    <p>use different parameters inside the function and then try...</p>
+</body>
+</html>
+
+<!--
+    What is an Event?
+    Javascript interaction with HTML is handled through events that occurs when 
+    the user's or the browser manipulates a page.
+
+    When the page loads, it is called an event. When the user clicks a button, that
+    click too is an event. Other examples includes events like pressing any key,
+    closing a window, resizing a window, etc.
+    Developers can use these events to execute Javascript coded responses, which 
+    cause button to close windows, messages to be displayed to users, data to be
+    validated, and virtuall any other type of response imaginable
+
+    Html 5 Standard Events
+    The standard HTML 5 events are listed here for your reference.
+    Here script indicates a JavaScript function to be executed against that event.
+
+    Offline , Onabort, Onafterprint, Onbeforeonload, onbeforeprint, onblur 
+    oncanplay, oncanplay oncanplaythrough onchange, onclick oncontextmenu 
+    oncontextmenu ondblclick ondrag ondraged ondragenter ondrageleave ondrageover
+    ondragover ondragestart ondrop ondurationchange onemptied onended onerror 
+    onfocus onformchange onforminput onhaschange oninput oninvalid onkeydown onkeypress
+    onkeyup.
+    onload onloadedata onloadedmetadata onloadstart onmessage onmousedown onmouseout 
+    onmouseover onmouseup onmousewheel onoffline onoine ononline onpagehide onpageshow
+    onpause onplay onplaying onpopstate onprogress onratechange onreadystatechange 
+    onredo onresize onscroll onseeked onseeking onselect onstalled onstorage onsubmit
+    onsuspend ontimeupdate onundo
+
+    onunload onvolumechange 
+   
+    What are Cookies?
+    Web Browsers and Servers uses HTTP protocoal to communicate and HTTP is a 
+    statement protocol But 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        <!--
+            function WriteCookie(){
+                if(document.myform.customer.value == ""){
+                    alert ("Enter some value!");
+                    return;
+                }
+
+                cookievalue= escape(document.myfrom.customer.value) + ";";
+                document.cookie="name=" + cookievalue;
+                document.write("Setting Cookies : " + "name= "  + cookievalue);
+            }
+            //-->
+    </script>
+</head>
+<body>
+    <form name="myform" action="">
+        Enter name: <input type="text" name="customer"/>
+        <input type="button" value="set Cookie" online="writeCookie();"/>
+    </form>
+</body>
+</html>
